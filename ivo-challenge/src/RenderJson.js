@@ -88,6 +88,17 @@ function RenderNode({
     const hasChildHeading = node.children?.some(
       (c) => ["h1","h2","h3","h4"].includes(c.type)
     );
+    const headingIndex = node.children?.findIndex(
+      (c) => c.type === "h4" || c.type === "h3" || c.type === "h2"
+    );
+
+    if (headingIndex !== -1){
+      const headingNode = node.children[headingIndex];
+      
+    }
+
+
+    
 
     return (
       <div style={{ marginTop: "1rem" }}>

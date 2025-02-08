@@ -6,12 +6,12 @@
   }
   
   .mention {
-    /* This uses the --mention-bg variable if defined, or #af38eb if not */
     background-color: var(--mention-bg, #af38eb);
     color: #fff;
-    padding: 2px 5px;
-    border-radius: 3px;
+    padding: 2px 4px;
+    border-radius: 4px;
     margin: 0 2px;
+    display: inline-block;
   }
   
   /* Example for headings, paragraphs, etc. */
@@ -39,6 +39,6 @@
   /* Clause numbering, etc. optional styling */
   .clause-heading {
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
   }
   
