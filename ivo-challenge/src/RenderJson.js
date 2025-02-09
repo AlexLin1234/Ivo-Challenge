@@ -21,7 +21,8 @@ function RenderNode({
       />
     ));
 
-  // 1) Text nodes
+  // 1) Text nodes for basic text
+  
   if (typeof node.text === "string") {
     const style = {
       fontWeight: node.bold ? "bold" : "normal",
@@ -159,7 +160,7 @@ function RenderNode({
 }
 
 export default function RenderJson({ data }) {
-  // Start numbering at 0 so the first clause is 1
+  // Start numbering at -1 so the first clause is 1
   const clauseCounter = useRef(-1);
   const definitionCounter = useRef(0);
 
